@@ -38,6 +38,8 @@ Unfortunately I didn't exploit this service during the competition, but got help
 
 ## Windows host
 
+There was no docker stuff on this box, so all the flags could be found once getting a shell. I initially used a search from the meterpreter console to search for flags, something like `search -h *.png`.
+
 A dump of info that I found from the box.
 
 ```
