@@ -20,7 +20,7 @@ Each team is given a Kali instance to ssh into, and from there we could attack t
 
 One target was an Ubuntu box which was running many docker containers. It was possible to eventually break out of a container and get onto the Ubuntu host as you can see below:
 
-![docker containers][docker_containers]
+![docker containers](docker_containers.png)
 
 The other target was a Windows box, where the only entry point was a Buffer Overflow exploit on port 4444. I did not get a shell here until after the competition was over, but captured as many files as I could in that time.
 
@@ -30,7 +30,7 @@ Flags came in the form of PNGs showing an image of a card, and to submit the fla
 
 There were 15 flags in total. 9 flags were in Ubuntu, 5 in Windows, and 1 flag required files that lived in both boxes.
 
-![flags][solves]
+![flags](solves.png)
 
 ### Scoreboard
 
