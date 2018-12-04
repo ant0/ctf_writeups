@@ -6,6 +6,9 @@ No nice images unfortunately, but I was using this command so that I could view 
 
 There are many varations on that with other tools like `sshuttle`.
 
+`sshuttle -ve "ssh -i metasploit_ctf_kali_ssh_key.pem" -r ec2-user@[redacted] --disable-ipv6 172.16.0.224/28; pfctl -f /etc/pf.conf
+autossh -M 2222 -i metasploit_ctf_kali_ssh_key.pem -R :443:127.0.0.1:4444 root@[redacted]`
+
 Nmap showed some information on the application.
 
 ```
