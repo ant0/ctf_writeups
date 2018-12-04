@@ -1,6 +1,6 @@
 # 9 of Hearts - port 8777
 
-Similar to 5 of Spades, there was a webservice here with seemingly nothing on it. I actually solved this one by finding it from the host box:
+Similar to 5 of Spades, there was a webservice here with seemingly nothing on it. I actually solved this one by finding it from the host box (see King of Hearts for more info):
 
 ```
 find / -name "*.png"
