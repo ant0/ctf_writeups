@@ -357,4 +357,26 @@ At this point I had a small problem, I had the flag but didn't know how to exfil
 
 The syntax was a bit strange at first, since first arg is the file to encode then second arg is the output file name after it's decoded. `uuencode 2_of_diamonds.png 2_of_diamonds.png` printed out encoded data similar to `base64`. After that I installed `uudecode` on Kali with `apt-get install sharutils` and ran `uudecode 2_of_diamonds.png`. Finally we have the 2 of Diamonds!
 
+## Notes from the author @wvu-r7
+
+Apparently the author will have a writeup too, but for now these are some of his comments.
+
+Since the challenge is based on the Morris worm (1988) for entry and The Cuckoo's Egg (1986) for post-exploitation, the idea is to navigate a foreign (and ancient to us) system as the hacker in the book did
+
+And yes, it's a real 4.3BSD system from 1986, simulated in SIMH, run inside Docker, artifacts scrubbed from `rq.dsk.gz` so anyone pwning Docker wouldn't be able to solve the challenge with `gunzip -c rq.dsk.gz | strings` ;)
+
+An easy privesc is `(umask 0 && /usr/guest/hunter/movemail /dev/null /usr/lib/crontab.local)` - `umask` is so I get `+w` (normally just `r`) and `/dev/null` because the input file gets truncated. Targeting `atrun(8)` would have been another option
+
+Another Easter egg here is that Bob Morris invented `crypt(1)`, and he had a prominent role in The Cuckoo's Egg
+
+(For the game) You could also solve the challenge by noting where the game data is stored (`.data` section of the binary). If you were able to extract the game data, you'd be able to decrypt the message containing the answer to `2_of_diamonds.dat` (Of course it's XOR)
+
+The source code for Adventure was available at `/usr/src/games/adventure`, too
+
+If you tried to reverse the binary, you'd note that modern tools don't do so well with VAX. r2 has support, but I found it to be limited and a little buggy with invalid instructions. You can use `binutils`, such as `objdump`, to disassemble. You could also use `dbx` on the target box, break execution, and dump instructions from `$pc`. Lots of options, all of them probably painful, haha. GDB should also be able to do VAX through `libbfd`. If I had left symbols in, you could have used `dbx` to `call pspeak("flag", 1)`, probably. Which would have dynamically decrypted the flag message and outputted it to the screen. You may have been able to do the same without symbols by using the `adb` debugger instead.
+
+The intended difficulty was medium-hard. The greatest difficulty being working with an old system and learning on the fly
+
+
+
 ![2 of diamonds](2_of_diamonds.png)
