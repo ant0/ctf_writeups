@@ -34,7 +34,7 @@ f.each_with_index do |i, index|
 	solution << f[index]
 end
 
-File.open("wtf.png", "wb"){|fh|
+File.open("9_of_hearts.png", "wb"){|fh|
   solution.compact.pack('C*').unpack('H*')[0].scan(/.{2}/) {|e| fh.putc(e.hex)}
 }
 ```
