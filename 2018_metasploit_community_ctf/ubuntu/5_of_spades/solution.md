@@ -1,6 +1,6 @@
 # 5 of Spades - port 9021
 
-I was doing some enum and found it by searching by file extension.
+There was a webservice here with seemingly nothing on it. I was doing some enum and found it by searching by file extension.
 
 ```
 dirb http://172.16.4.85:9021 /usr/share/wordlists/dirb/big.txt -X .png
