@@ -314,7 +314,7 @@ There is a flag here.
 take flag
 ```
 
-The funny thing was, that the first time I got the flag I tried to rush back to the building but got kill on the way by dwarves, arrrghhh! A little while later I captured the flag and dropped it off.
+The funny thing was, that the first time I got the flag I tried to rush back to the building but got killed on the way by dwarves, arrrghhh! A little while later I captured the flag and dropped it off.
 
 ```
 You are in a large room, with a passage to the south, a passage to the
