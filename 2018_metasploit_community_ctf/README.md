@@ -30,6 +30,22 @@ Flags came in the form of PNGs showing an image of a card, and to submit the fla
 
 There were 15 flags in total. 9 flags were in Ubuntu, 5 in Windows, and 1 flag required files that lived in both boxes.
 
+* 2 of Clubs (WMI)
+* King of Diamonds (libssh)
+* 2 of Diamonds (Vax)
+* 6 of Hearts (Goliath - Metasploit data service)
+* 10 of Hearts (Struts)
+* Queen of Clubs (MIME)
+* Ace of Diamonds (flag_finder_9000.exe)
+* 10 of Diamonds (Heavily obfuscated EXE)
+* 8 of Diamonds (obfuscated JavaScript with troll)
+* 9 of Hearts (port 8777)
+* Ace of Hearts (GPG)
+* 3 of Clubs (Terms of Service)
+* 5 of Spades (Msf module - port 9021)
+* 3 of Diamonds (SQLi)
+* 9 of Spades (encrypted flag)
+
 ![flags](solves.png)
 
 ### Scoreboard
