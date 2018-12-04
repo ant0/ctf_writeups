@@ -64,3 +64,10 @@ Binary file .//5ofspades.png matches
 Binary file .//9ofhearts.png matches
 Binary file .//8ofdiamonds.png matches
 ```
+
+## Flag exfiltration
+
+In some containers it was difficult to get the images out because of various reasons without having a meterpreter shell. One solution was to use `base64` to encode the whole image into a format that can be copied to a local box, and the process reversed.
+
+Encode the image with `cat flag.png | base64`, copy the output, then reverse it with `cat encoded.png | base64 -D > flag.png`. There was one box which didn't have base64 at all which presented its own challenges, read 2 of Diamonds writeup for more.
+
