@@ -30,7 +30,7 @@ PORT    STATE         SERVICE
 MAC Address: 0A:28:C5:43:46:2A (Unknown)
 ```
 
-## Shell on Ubuntu host
+## Shell on Ubuntu host
 
 One interesting discovery was being able to get a shell on the host system itself after escaping via the docker container on port 2222. Read the writeup for port 2222 (King of Diamonds) to see initial steps.
 
