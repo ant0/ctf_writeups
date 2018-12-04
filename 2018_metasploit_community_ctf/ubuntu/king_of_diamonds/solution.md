@@ -124,7 +124,7 @@ So if I had used `arecord` to capture the audio, which was a binary on the box, 
 
 The other solution was to trace the audio back to the source, which was a binary called `corey` in the Ubuntu host. This could have been found by looking at system logs, or using `tcpdump` to trace to the source of the audio. From the binary you could directly extract the image using `foremost`, which is a tool that I think is actually better than `binwalk`.
 
-Oh well! Lesson learnt, and it will teach me to always question and validate my thoughts better.
+Oh well! Lesson learnt, and it will teach me to always question and validate my thoughts better. I should have thought more of why I wasn't finding a PNG signature in the audio, and if I had taken the time to enumerate more and explore all options (I had seen `arecord` and flagged, but didn't follow up) then I would have definitely solved this one.
 
 > "Go slow in order to go fast."
 
