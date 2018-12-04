@@ -30,7 +30,7 @@ solution = []
 f.each_with_index do |i, index|
 	next if index.odd?
   
-	solution << f[index+1] # remember nil
+	solution << f[index+1] # remember nil, gets removed by .compact later
 	solution << f[index]
 end
 
