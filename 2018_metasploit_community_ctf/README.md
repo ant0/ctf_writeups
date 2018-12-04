@@ -26,7 +26,7 @@ The other target was a Windows box, where the only entry point was a Buffer Over
 
 ### Flags
 
-Flags came in the form of PNGs showing an image of a card, and to submit the flag we had to subit the MD5 sum of the image.
+Flags came in the form of PNGs showing an image of a card, and to submit the flag we had to subit the MD5 sum of the image. Each of the cards had a nice description about how it's related to Metasploit, like card X is where our office is or card Y is our CEO, but that information disappeared once the CTF finished.
 
 There were 15 flags in total. 9 flags were in Ubuntu, 5 in Windows, and 1 flag required files that lived in both boxes.
 
