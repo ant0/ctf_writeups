@@ -20,7 +20,7 @@ I placed some breakpoints then I could start stepping into the code.
 
 ![debug](debug.png)
 
-After a while of stepping in it reaches a loop where a comparison is made with `JNZ SHORT 01011100`. I assumed at this point it was checking if the magic string was correct or not, since after this loop it directs me to the failure message.
+After a while of stepping in it reaches a loop where a comparison is made with `JNZ 00F912CA`. I assumed at this point it was checking if the magic string was correct or not, since after this loop it directs me to the failure message.
 
 A simple way I found to bypass this is to remove the jump completely by replacing it with NOPs. Right click on the line of code, select Binary -> Fill with NOPs
 
