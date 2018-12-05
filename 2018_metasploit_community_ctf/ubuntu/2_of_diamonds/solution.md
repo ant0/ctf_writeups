@@ -375,8 +375,8 @@ The source code for Adventure was available at `/usr/src/games/adventure`, too
 
 If you tried to reverse the binary, you'd note that modern tools don't do so well with VAX. r2 has support, but I found it to be limited and a little buggy with invalid instructions. You can use `binutils`, such as `objdump`, to disassemble. You could also use `dbx` on the target box, break execution, and dump instructions from `$pc`. Lots of options, all of them probably painful, haha. GDB should also be able to do VAX through `libbfd`. If I had left symbols in, you could have used `dbx` to `call pspeak("flag", 1)`, probably. Which would have dynamically decrypted the flag message and outputted it to the screen. You may have been able to do the same without symbols by using the `adb` debugger instead.
 
-The intended difficulty was medium-hard. The greatest difficulty being working with an old system and learning on the fly
+The intended difficulty was medium-hard. The greatest difficulty being working with an old system and learning on the fly.
 
-
+[Docker environment used](https://github.com/wvu/ye-olde-bsd)
 
 ![2 of diamonds](2_of_diamonds.png)
