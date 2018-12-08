@@ -1,7 +1,7 @@
 require 'base64'
 
 # join all lines together to process data easier
-data = File.read('2_of_clubs.txt').delete(' ').delete "\n"
+data = File.read('2_of_clubs_msflag.txt').delete(' ').delete "\n"
 
 output = ""
 
